@@ -23,7 +23,12 @@ __
 
 | Behavior    | Input | Output |
 | :---------- | ----- | -----: |
-|  |  |  |
+| User input title | User writes up content for title to be input 'submit' | stored in Buiness logic/User logic |
+| User input body | User writes up content for body to be input 'submit'  | stored in Buiness logic/User logic |
+| Number of Words | takes in user input of words  | returns number of words |
+| Vowels to Consonants | takes in user input vowles  | returns consonants in their place |
+| getteaser  | takes user inputed entry  |  returns the first sentence of users input up to 8 words |
+
 
 
 ## Known Bugs
