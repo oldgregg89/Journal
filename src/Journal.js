@@ -1,37 +1,31 @@
-//Buiness Logic
+//Business Logic
 export function wordsToNumber(){
-  let totalWords = 0;
-  for (var i=0; 1 < Wordcount.length; i++){
-    if (String(i) === " ") {
-      totalWords = +1;
+  let totalvowels = 0;
+  let vowelArray = convertWordstoStrings()
+  for (var i=0; 1 < vowelArray.length; i++){
+    if (vowelArray[i] === ["a"||"e"||"i"||"o"||"u"]) {
+      totalVowels += 1;
     }
-    totalWords += 1;
+    totalVowels += 1;
   }
 }
 
 
-export function convertSentencestoStrings (){
-  let userWords = userInputBody.split(" ")
-  userSentenceArray = [];
-  userWords.forEach(function(word) {
-    userSentenceArray.push(word)
+export function convertWordstoStrings (){
+  let userChar = $(("#userInputBody").val()).split("")
+  userArray = [];
+  userChar.forEach(function() {
+    userArray.push(userChar)
   })
 
 }
 
-export function convertWordstoStrings() {
-let outputSentence = userWords.split("")
+// export function convertWordstoStrings() {
+// let outputSentence = userWords.split("")
+// let userLetterArray = [];
+// userWords.forEach
 
-}
-
-export function isVowels(){
-  let vowels = ["a", "e", "i", "o", "u"]
-  let isVowels;
-  for (v = 0; v < vowels.length; v++) {
-    if (vowels[v] === inputBody)
-   isVowels === true;
-  }
-}
+// }
 
 export function vowelsToConsonants(){
 
@@ -50,5 +44,7 @@ $(document).ready(function(){
     let userInputTile = $("input#inputTitle").val();
     let userInputBody = $("input#inputBody").val();
 
+    wordsToNumber.totalVowels;
+    $("../#outputTitle").text() = userInputTile
   }
 });
