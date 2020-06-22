@@ -12,20 +12,15 @@ export function wordsToNumber(){
 
 
 export function convertWordstoStrings (){
-  let userChar = $(("#userInputBody").val()).split("")
+  let userWords = $(("#userInputBody").val()).split(" ")
   userArray = [];
-  userChar.forEach(function() {
-    userArray.push(userChar)
+  userWords.forEach(function() {
+    userArray.push(userWords)
   })
-
+  return userArray.length; // Return number of words in the userArray...
+  
 }
 
-// export function convertWordstoStrings() {
-// let outputSentence = userWords.split("")
-// let userLetterArray = [];
-// userWords.forEach
-
-// }
 
 export function vowelsToConsonants(){
 
